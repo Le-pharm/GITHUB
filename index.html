@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Construction Website</title>
+
+   <!-- font awesome link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+   <!-- Start Header -->
+   <!-- Header with Login/Register Dropdown -->
+   <header class="header">
+      <a href="#" class="logo">JNR <span>Flooring</span></a>
+
+      <nav class="navbar">
+         <a href="#home">HOME</a>
+         <a href="#about">ABOUT</a>
+         <a href="#projects">PROJECTS</a>
+         <a href="#services">SERVICES</a>
+         <a href="#clients">CLIENTS</a>
+         <a href="#contact">CONTACT</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="info-btn" class="fas fa-info-circle" title="Contact Info"></div>
+         <div id="search-btn" class="fas fa-search" title="Search"></div>
+      </div>
+      <div class="user-menu">
+         <button id="user-btn">Login / Register</button>
+         <div class="dropdown" id="dropdown">
+             <div class="tabs">
+                 <button class="tab active" id="login-tab">Login</button>
+                 <button class="tab" id="register-tab">Register</button>
+             </div>
+             
+             <!-- Login Form -->
+             <form id="login-form" action="PHP/login.php" method="POST">
+                 <input type="email" name="email" placeholder="Email" required>
+                 <input type="password" name="password" placeholder="Password" required>
+                 <button type="submit">Login</button>
+             </form>
+ 
+             <!-- Register Form -->
+             <form id="register-form" action="PHP/register.php" method="POST" style="display: none;">
+                 <input type="text" name="name" placeholder="Full Name" required>
+                 <input type="email" name="email" placeholder="Email" required>
+                 <input type="password" name="password" placeholder="Password" required>
+                 <input type="text" name="phone_number" placeholder="Phone Number" required>
+                 <button type="submit">Register</button>
+             </form>
+         </div>
+     </div>
+
+   </header>
+   <!-- End Header 
+   <section id="login-section" class="auth-section">
+      <h2>Login</h2>
+      <form id="loginForm" action="PHP/login.php" method="POST">
+          <label for="email">Email:</label>
+          <input type="email" name="email" required>
+  
+          <label for="password">Password:</label>
+          <input type="password" name="password" required>
+  
+          <button type="submit">Login</button>
+      </form>
+  </section>
+  
+  Full-page Register Section 
+  <section id="register-section" class="auth-section">
+      <h2>Register</h2>
+      <form id="registerForm" action="PHP/register.php" method="POST">
+          <label for="name">Full Name:</label>
+          <input type="text" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" name="email" required>
+  
+          <label for="password">Password:</label>
+          <input type="password" name="password" required>
+  
+          <label for="phone_number">Phone Number:</label>
+          <input type="text" name="phone_number" required>
+  
+          <button type="submit">Register</button>
+      </form>
+  </section>-->
+
+    <!-- todo: Start home  -->
+
+   <section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+       <div class="swiper-wrapper">
+
+          <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+             <div class="content">
+                <h3>we provide best service</h3>
+                <p>Your Digital blueprint for success in the building industry.</p>
+                <a href="#about" class="btn">get started</a>
+             </div>
+          </section>
+
+          <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+             <div class="content">
+                <h3>making dream come to life</h3>
+                <p>At JNR,we turn your vision into reality with expertise, precision, and a commitment to excellence. 
+                   Our website showcases our work and ensures seamless communication, making us your trusted partner for every construction project.</p>
+                <a href="#about" class="btn">get started</a>
+             </div>
+          </section>
+
+          <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+             <div class="content">
+                <h3>from concept to creation</h3>
+                <p>The website will build trust with potential clients and illustrate the seamless transformation of
+                   their ideas into reality.</p>
+                <a href="#about" class="btn">get started</a>
+             </div>
+          </section>
+
+       </div>
+
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+
+    </div>
+
+ </section>
+
+ <!-- ! End home  -->
+
+ <!-- todo: Start about   -->
+
+ <section class="about" id="about">
+
+    <h1 class="heading"> about us </h1>
+
+    <div class="row">
+
+       <div class="video">
+          <video src="images/about-vid.mp4" loop muted autoplay></video>
+       </div>
+
+       <div class="content">
+          <h3>We will provide you the best work which you dreamt for!</h3>
+          <p>Hard workers persevere in large and small ways to the benefit of their personal and professional
+             communities. Persistence is continued, extended effort toward a goal or outcome, regardless of challenges
+             or obstacles.</p>
+          <a href="#services" class="btn">read more</a>
+       </div>
+
+    </div>
+
+    <div class="box-container">
+
+       <div class="box">
+          <h3>7+</h3>
+          <p>years of experience</p>
+       </div>
+
+       <div class="box">
+          <h3>250+</h3>
+          <p>project completed</p>
+       </div>
+
+       <div class="box">
+          <h3>790+</h3>
+          <p>satiesfied clients</p>
+       </div>
+
+       <div class="box">
+          <h3>450+</h3>
+          <p>active workers</p>
+       </div>
+
+    </div>
+
+ </section>
+
+ <!-- ! End about -->
+
+ <!-- todo: Start services  -->
+
+ <section class="services" id="services">
+
+    <h1 class="heading"> our services </h1>
+
+    <div class="box-container">
+
+       <div class="box">
+          <img src="images/service-1.png" alt="">
+          <h3>Drilling Secant Wall</h3>
+          <p>A drilling secant wall is a reinforced concrete barrier made of interlocking primary and secondary piles, used for deep foundation support and groundwater control in construction projects.</p>
+       </div>
+
+       <div class="box">
+          <img src="images/service-2.png" alt="">
+          <h3>Sheet Pilling</h3>
+          <p>Sheet piling is a construction technique that uses interlocking steel, vinyl, or concrete sheets to create a continuous barrier for soil retention, water control, and structural support in various environments.</p>
+       </div>
+
+       <div class="box">
+          <img src="images/service-3.png" alt="">
+          <h3>architechture design</h3>
+          <p>Architecture design involves the process of planning, designing, and constructing buildings and other
+             physical structures.</p>
+       </div>
+
+       <div class="box">
+          <img src="images/service-4.png" alt="">
+          <h3>material supply</h3>
+          <p>Material supply in the context of construction involves providing various types of materials needed for
+             building projects.</p>
+       </div>
+
+       <div class="box">
+          <img src="images/service-5.png" alt="">
+          <h3>construction consultant</h3>
+          <p>Construction consultants play a crucial role in the building industry by offering expertise in project
+             management, planning, design, and construction oversight.</p>
+       </div>
+
+       <div class="box">
+          <img src="images/service-6.png" alt="">
+          <h3>interior design</h3>
+          <p>Interior designers use various elements such as color, furniture, lighting, and decor to create
+             functional and beautiful spaces.</p>
+       </div>
+
+       <div class="box">
+          <img src="images/service-7.png" alt="">
+          <h3>building maintenance</h3>
+          <p>Building maintenance involves the upkeep, repair, and general care of physical structures, ensuring they
+             remain safe, functional, and aesthetically pleasing.</p>
+       </div>
+
+       <div class="box">
+          <img src="images/service-8.png" alt="">
+          <h3>building renovation</h3>
+          <p>Building renovation involves the process of restoring, improving, or updating existing structures to
+             enhance their functionality, aesthetics, and overall value.</p>
+       </div>
+
+    </div>
+
+ </section>
+
+ <!-- ! End services -->
+
+ <!-- todo Start projects   -->
+
+ <section class="projects" id="projects">
+
+    <h1 class="heading"> our projects </h1>
+
+    <div class="box-container">
+
+       <a href="images/project-1.jpg" class="box">
+          <div class="image">
+             <img src="images/project-1.jpg" alt="">
+          </div>
+          <div class="content">
+             <div class="info">
+                <h3>dream home</h3>
+                <p>construction, design</p>
+             </div>
+             <i class="fas fa-plus"></i>
+          </div>
+       </a>
+
+       <a href="images/project-2.jpg" class="box">
+          <div class="image">
+             <img src="images/project-2.jpg" alt="">
+          </div>
+          <div class="content">
+             <div class="info">
+                <h3>dream home</h3>
+                <p>construction, design</p>
+             </div>
+             <i class="fas fa-plus"></i>
+          </div>
+       </a>
+
+       <a href="images/project-3.jpg" class="box">
+          <div class="image">
+             <img src="images/project-3.jpg" alt="">
+          </div>
+          <div class="content">
+             <div class="info">
+                <h3>dream home</h3>
+                <p>construction, design</p>
+             </div>
+             <i class="fas fa-plus"></i>
+          </div>
+       </a>
+
+       <a href="images/project-4.jpg" class="box">
+          <div class="image">
+             <img src="images/project-4.jpg" alt="">
+          </div>
+          <div class="content">
+             <div class="info">
+                <h3>dream home</h3>
+                <p>construction, design</p>
+             </div>
+             <i class="fas fa-plus"></i>
+          </div>
+       </a>
+
+       <a href="images/project-5.jpg" class="box">
+          <div class="image">
+             <img src="images/project-5.jpg" alt="">
+          </div>
+          <div class="content">
+             <div class="info">
+                <h3>dream home</h3>
+                <p>construction, design</p>
+             </div>
+             <i class="fas fa-plus"></i>
+          </div>
+       </a>
+
+       <a href="images/project-6.jpg" class="box">
+          <div class="image">
+             <img src="images/project-6.jpg" alt="">
+          </div>
+          <div class="content">
+             <div class="info">
+                <h3>dream home</h3>
+                <p>construction, design</p>
+             </div>
+             <i class="fas fa-plus"></i>
+          </div>
+       </a>
+
+    </div>
+
+ </section>
+
+ <!-- ! End projects -->
+
+ <!-- todo: Start reviews  -->
+
+ <section class="reviews">
+
+    <h1 class="heading"> clients reviews </h1>
+
+    <div class="swiper reviews-slider">
+
+       <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide">
+             <p>Choosing Construction Website for our dream home project was the best decision we made. From the
+                initial consultation to
+                the final walkthrough, their team was professional, attentive, and dedicated to bringing our vision to
+                life. The quality
+                of craftsmanship and attention to detail exceeded our expectations. We are thrilled with our new home
+                and highly
+                recommend Construction Website to anyone looking to build a custom home which was great. </p>
+             <div class="user">
+                <img src="images/pic 1.jpg" alt="">
+                <div class="info">
+                   <h3>Ram Kurre</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <p>As a property developer, I have worked with many construction companies, but Construction Website
+                stands out for their commitment to quality and reliability. They delivered a complex multi-unit
+                residential project ahead of schedule and maintained the highest standards of construction. Their
+                transparent approach and proactive problem-solving made the entire process smooth and stress-free. I
+                look forward to collaborating with them on future projects.</p>
+             <div class="user">
+                <img src="images/pic 2.jpg" alt="">
+                <div class="info">
+                   <h3>Priya Roy</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <p>Building our new corporate headquarters was a major undertaking, and Construction Website delivered
+                beyond our expectations. Their team handled every aspect of the project with professionalism and
+                expertise. The building is not only state-of-the-art but also a true reflection of our company's
+                values and vision. We appreciate collaborative approach and the commitment to quality that
+                Construction Website brought to this project.</p>
+             <div class="user">
+                <img src="images/pic 3.jpg" alt="">
+                <div class="info">
+                   <h3>Vardaan Sao</h3>
+                   <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+       </div>
+
+    </div>
+
+ </section>
+
+ <!-- ! End reviews -->
+
+ <!-- todo: Start pricing   -->
+
+ <section class="pricing" id="pricing">
+
+    <h1 class="heading"> our pricing </h1>
+
+    <div class="box-container">
+
+       <div class="box">
+          <i class="fas fa-home"></i>
+          <h3>basic plan</h3>
+          <div class="price"><span>₹</span>21K<span>/Monthly</span></div>
+          <div class="list">
+             <p>Interior design</p>
+             <p>Refurbishment</p>
+             <p>Material supply</p>
+             <p>Maintenance</p>
+             <p>12 Hours support</p>
+          </div>
+
+       </div>
+
+       <div class="box">
+          <i class="fas fa-building"></i>
+          <h3>premium plan</h3>
+          <div class="price"><span>₹</span>55K<span>/Monthly</span></div>
+          <div class="list">
+             <p>Interior design</p>
+             <p>Refurbishment</p>
+             <p>Material supply</p>
+             <p>Maintenance</p>
+             <p>12 Hours support</p>
+          </div>
+         
+       </div>
+
+       <div class="box">
+          <i class="fas fa-city"></i>
+          <h3>ultimate plan</h3>
+          <div class="price"><span>₹</span>110K<span>/Monthly</span></div>
+          <div class="list">
+             <p>Interior design</p>
+             <p>Refurbishment</p>
+             <p>Material supply</p>
+             <p>Maintenance</p>
+             <p>12 Hours support</p>
+          </div>
+          
+       </div>
+
+    </div>
+
+ </section>
+
+ <!-- ! End pricing -->
+
+ <!-- todo: Start contact  -->
+
+ <section class="contact" id="contact">
+
+    <h1 class="heading"> contact us </h1>
+
+    <div class="row">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193903.15003164732!2d-74.2910873677816!3d40.59156651515063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b17ddf5ba0b%3A0x7860dce91d39cac5!2sJNR%20Inc!5e0!3m2!1sen!2sus!4v1739310369521!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+ </section>
+
+ <!-- ! End contact  -->
+
+ <!-- todo: Start blogs   -->
+
+ <section class="blogs" id="blogs">
+
+    <h1 class="heading"> our blogs </h1>
+
+    <div class="swiper blogs-slider">
+
+       <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide">
+             <div class="image">
+                <img src="images/construction technology.jfif" alt="">
+             </div>
+             <div class="content">
+                <h3>Construction Techniques</h3>
+                <p>Articles on best practices, innovative methods, and emerging technologies in construction.</p>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <div class="image">
+                <img src="images/project management.jfif" alt="">
+             </div>
+             <div class="content">
+                <h3>Project Management</h3>
+                <p>Tips and guides for effective project planning, scheduling, and budgeting in construction projects.
+                </p>
+             </div>
+          </div>
+
+          <div class="swiper-slide slide">
+             <div class="image">
+                <img src="images/construction-news.webp" alt="">
+             </div>
+             <div class="content">
+                <h3>Industry News</h3>
+                <p>Updates on regulatory changes, market trends, and industry events impacting the construction
+                   sector.</p>
+             </div>
+          </div>
+
+
+
+
+       </div>
+
+ </section>
+
+ <!-- ! End blogs -->
+
+ <!-- todo: Start client logo -->
+
+ <section class="logo-container">
+    <div class="swiper logo-slider">
+       <div class="swiper-wrapper">
+          <div class="swiper-slide slide"><img src="images/client-logo-1.png" alt=""></div>
+          <div class="swiper-slide slide"><img src="images/client-logo-2.png" alt=""></div>
+          <div class="swiper-slide slide"><img src="images/client-logo-3.png" alt=""></div>
+          <div class="swiper-slide slide"><img src="images/client-logo-4.png" alt=""></div>
+          <div class="swiper-slide slide"><img src="images/client-logo-5.png" alt=""></div>
+          <div class="swiper-slide slide"><img src="images/client-logo-6.png" alt=""></div>
+       </div>
+    </div>
+ </section>
+
+ <!-- ! End client logo -->
+
+ <!-- todo: Start footer  -->
+
+ <section class="footer">
+
+    <div class="links">
+       <a class="btn" href="#home">home</a>
+       <a class="btn" href="#about">about</a>
+       <a class="btn" href="#services">services</a>
+       <a class="btn" href="#projects">projects</a>
+       <a class="btn" href="#pricing">pricing</a>
+       <a class="btn" href="#contact">contact</a>
+       <a class="btn" href="#blogs">blogs</a>
+    </div>
+
+    <div class="credit"> created by <span>Ram Hitesh Pinnamaneni, Chandu Jutke</span> </div>
+
+ </section>
+
+   <!-- Contact Information -->
+   <div class="contact-info">
+      <div id="close-contact-info" class="fas fa-times"></div>
+      <div class="info">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>+1 718-403-9216</p>
+      </div>
+      <div class="info">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>cjutke@jnrnyc.com</p>
+      </div>
+      <div class="info">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>office address</h3>
+         <p>131 Imlay St, Brooklyn, NY 11231</p>
+      </div>
+      <div class="share">
+         <a href="https://www.instagram.com/_jnr.inc?igsh=MXNoeTg1dzUyMjE0eQ==" class="fab fa-instagram"></a>
+         <a href="https://www.linkedin.com/in/rocco-fama-285202158/" class="fab fa-linkedin"></a>
+      </div>
+   </div>
+
+   <!-- Scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="/script.js"></script>
+
+   <!-- Fix LightGallery Error -->
+   <script>
+      let projectGallery = document.querySelector('.projects .box-container');
+      if (projectGallery) {
+         lightGallery(projectGallery);
+      }
+   </script>
+
+</body>
+</html>
